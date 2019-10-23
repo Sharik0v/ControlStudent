@@ -1,0 +1,33 @@
+﻿<Window x:Class="ControlStudents.Enter.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControlStudents.Enter"
+        mc:Ignorable="d"
+        Title="Registration" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Back" Click="Back_Click" Content="Вернуться" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="75" Grid.Column="2" Margin="107,10,0,0"/>
+        <TextBox x:Name="TxtRegLogin" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="260" Grid.Column="1" Margin="140,38,0,0" Grid.Row="1"/>
+        <PasswordBox x:Name="TxtRegPass" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="140,98,0,0" Grid.Row="1"/>
+        <Label Content="Логин" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="0,38,0,0" Grid.Row="1" Width="140"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="0,98,0,0" Grid.Row="1" Width="140"/>
+        <PasswordBox x:Name="TxtRegPass2" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="185,158,0,0" Grid.Row="1" Width="215"/>
+        <Label Content="Повторите Пароль" VerticalAlignment="Top" Margin="0,158,215,0" Grid.Row="1" Width="Auto" Grid.Column="1"/>
+        <Button Click="BtnRegistration_Click" x:Name="BtnRegistration" Content="Зарегестрироваться" VerticalAlignment="Top" Width="Auto" Grid.Column="1" Margin="120,210,120,0" Grid.Row="1"/>
+        <TextBox x:Name="FIO" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="260" Grid.Column="1" Margin="140,84,0,0" Grid.RowSpan="2"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="0,84,0,0" Grid.RowSpan="2" Width="140"/>
+        <TextBox x:Name="Klass" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="260" Grid.Column="1" Margin="140,27,0,0"/>
+        <Label Content="Группа" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="0,27,0,0" Width="140"/>
+    </Grid>
+</Window>

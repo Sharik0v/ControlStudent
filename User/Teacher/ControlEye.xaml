@@ -1,0 +1,25 @@
+﻿<Window x:Class="ControlStudents.User.Teacher.ControlEye"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControlStudents.User.Teacher"
+        mc:Ignorable="d"
+        Title="ControlEye" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Back" Click="Back_Click" Content="Вернуться" HorizontalAlignment="Left" Height="Auto" Width="75" Grid.Column="2" Margin="107,10,0,60"/>
+        <DataGrid x:Name="DGCtEye" Height="387" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="3" Margin="10,45,18,0"/>
+        <TextBox x:Name="TxtLogin" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="260" Margin="0,10,0,0" Grid.Column="1"/>
+        <Label Content="Код контрольной" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="180"/>
+    </Grid>
+</Window>
